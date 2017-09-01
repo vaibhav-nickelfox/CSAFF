@@ -10,26 +10,40 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+	@IBOutlet var tableView: UITableView!
+	
+	var cellItems: [HomeCellModel] = []
     override func viewDidLoad() {
         super.viewDidLoad()
 		configureNavbar()
+		setupTableView()
+		cellItems = [HomeCellModel(image: "nav-bar", title: "Title1"),
+		             HomeCellModel(image: "nav-bar", title: "Title2"),
+		             HomeCellModel(image: "nav-bar", title: "Title3"),
+		             HomeCellModel(image: "nav-bar", title: "Title4")
+		]
 	}
-	
-//	override var preferredStatusBarStyle: UIStatusBarStyle {
-//		return UIStatusBarStyle.lightContent
-//	}
 	
 	fileprivate func configureNavbar() {
-		decorateNavbar()
-		let leftItem = UIBarButtonItem(title: "Festivals", style: .plain, target: nil, action: nil)
-		leftItem.tintColor = UIColor.white
-//		leftItem.isEnabled = false
-		//self.navigationItem.leftBarButtonItem = leftItem
-	}
-	
-	fileprivate func decorateNavbar() {
 		self.navigationController?.navigationBar.barTintColor = UIColor(hexString: "B53F5E")
 		self.navigationController?.navigationBar.isTranslucent = false
 		UIApplication.shared.statusBarStyle = .lightContent
+	}
+}
+
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+	fileprivate func setupTableView() {
+		tableView.dataSource = self
+		tableView.delegate = self
+	}
+	
+	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		return cellItems.count
+	}
+	
+	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableCell.identifier) as! HomeTableCell
+		cell.item = cellItems[indexPath.row]
+		return cell
 	}
 }

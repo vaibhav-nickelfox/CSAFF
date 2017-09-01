@@ -19,6 +19,7 @@
 		80A7B18F1F5949C100D938DE /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A7B18E1F5949C100D938DE /* Home.storyboard */; };
 		80A7B1931F59505200D938DE /* UIColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A7B1921F59505200D938DE /* UIColors.swift */; };
 		80A7B1961F59509800D938DE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A7B1951F59509800D938DE /* HomeViewController.swift */; };
+		80A7B1991F595F4500D938DE /* HomeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A7B1981F595F4500D938DE /* HomeTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		80A7B18E1F5949C100D938DE /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = ProjectFiles/Code/UI/Home/Home.storyboard; sourceTree = "<group>"; };
 		80A7B1921F59505200D938DE /* UIColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColors.swift; path = ProjectFiles/Code/Helpers/UIColors.swift; sourceTree = "<group>"; };
 		80A7B1951F59509800D938DE /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ProjectFiles/Code/UI/Home/Conrollers/HomeViewController.swift; sourceTree = "<group>"; };
+		80A7B1981F595F4500D938DE /* HomeTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeTableCell.swift; path = ProjectFiles/Code/UI/Home/CellModel/HomeTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 		80A7B18D1F59499B00D938DE /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				80A7B1971F595F1500D938DE /* CellModel */,
 				80A7B1941F59508800D938DE /* Controllers */,
 				80A7B18E1F5949C100D938DE /* Home.storyboard */,
 			);
@@ -163,6 +166,14 @@
 				80A7B1951F59509800D938DE /* HomeViewController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		80A7B1971F595F1500D938DE /* CellModel */ = {
+			isa = PBXGroup;
+			children = (
+				80A7B1981F595F4500D938DE /* HomeTableCell.swift */,
+			);
+			name = CellModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +259,7 @@
 				80A7B1831F59441400D938DE /* Configuration.swift in Sources */,
 				80A7B1961F59509800D938DE /* HomeViewController.swift in Sources */,
 				80A7B1811F5943EE00D938DE /* Constants.swift in Sources */,
+				80A7B1991F595F4500D938DE /* HomeTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
