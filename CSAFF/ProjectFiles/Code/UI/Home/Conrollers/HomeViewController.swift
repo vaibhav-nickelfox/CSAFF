@@ -29,6 +29,17 @@ class HomeViewController: UIViewController {
 		self.navigationController?.navigationBar.isTranslucent = false
 		UIApplication.shared.statusBarStyle = .lightContent
 	}
+	
+	@IBAction func handleCityTaped(_ sender: UIButton) {
+		
+	}
+	
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		if segue.destination is SelectCityViewController {
+			let vc = segue.destination as! SelectCityViewController
+			vc.delegate = self
+		}
+	}
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
@@ -45,5 +56,11 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 		let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableCell.identifier) as! HomeTableCell
 		cell.item = cellItems[indexPath.row]
 		return cell
+	}
+}
+
+extension HomeViewController: SelectCityDelegate {
+	func didSelectCity(_ viewController: SelectCityViewController, _ model: CityModel) {
+		print(model.city)
 	}
 }
