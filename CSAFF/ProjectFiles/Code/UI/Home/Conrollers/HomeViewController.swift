@@ -17,10 +17,10 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 		configureNavbar()
 		setupTableView()
-		cellItems = [HomeCellModel(image: "nav-bar", title: "Title1"),
-		             HomeCellModel(image: "nav-bar", title: "Title2"),
-		             HomeCellModel(image: "nav-bar", title: "Title3"),
-		             HomeCellModel(image: "nav-bar", title: "Title4")
+		cellItems = [HomeCellModel(image: "csaff", title: "Title1"),
+		             HomeCellModel(image: "csaff", title: "Title2"),
+		             HomeCellModel(image: "csaff", title: "Title3"),
+		             HomeCellModel(image: "csaff", title: "Title4")
 		]
 	}
 	
@@ -53,7 +53,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 	}
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableCell.identifier) as! HomeTableCell
+		let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableCell.identifier, for: indexPath) as! HomeTableCell
 		cell.item = cellItems[indexPath.row]
 		return cell
 	}

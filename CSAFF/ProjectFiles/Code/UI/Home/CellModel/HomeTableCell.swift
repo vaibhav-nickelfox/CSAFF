@@ -37,7 +37,7 @@ class HomeTableCell: UITableViewCell {
 	
 	fileprivate func config(_ item: HomeCellModel?) {
 		guard let model = item else { return }
-		imageView?.image = UIImage(named: model.image)
+		imgView?.image = UIImage(named: model.image)
 		titleLabel.text = model.title
 	}
 

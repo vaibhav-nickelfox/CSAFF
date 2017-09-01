@@ -25,50 +25,52 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeTableCell" rowHeight="145" id="UZT-xJ-7oO" customClass="HomeTableCell" customModule="CSAFF" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeTableCell" id="c69-j6-gFA" customClass="HomeTableCell" customModule="CSAFF" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="145"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UZT-xJ-7oO" id="VJJ-9B-qbZ">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c69-j6-gFA" id="DBf-0O-wIG">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="144.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lgl-Vx-Pry">
-                                                    <rect key="frame" x="16" y="16" width="343" height="112.5"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zrf-ve-qVs">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="144.5"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Whm-C2-OWx">
-                                                            <rect key="frame" x="0.0" y="0.0" width="343" height="112.5"/>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mCS-hn-aQe">
+                                                            <rect key="frame" x="16" y="16" width="343" height="112.5"/>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5KV-4A-Jj0">
-                                                            <rect key="frame" x="16" y="74.5" width="311" height="22"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGQ-PN-sAz">
+                                                            <rect key="frame" x="32" y="90.5" width="311" height="22"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="22" id="jOG-Qb-MoM"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="16"/>
-                                                            <nil key="textColor"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstItem="Whm-C2-OWx" firstAttribute="top" secondItem="lgl-Vx-Pry" secondAttribute="top" id="6rD-6D-FvT"/>
-                                                        <constraint firstItem="Whm-C2-OWx" firstAttribute="leading" secondItem="lgl-Vx-Pry" secondAttribute="leading" id="HwS-pQ-Xo1"/>
-                                                        <constraint firstAttribute="trailing" secondItem="5KV-4A-Jj0" secondAttribute="trailing" constant="16" id="Nvq-Hu-Pk9"/>
-                                                        <constraint firstAttribute="bottom" secondItem="Whm-C2-OWx" secondAttribute="bottom" id="Qcg-i0-nBf"/>
-                                                        <constraint firstItem="5KV-4A-Jj0" firstAttribute="leading" secondItem="lgl-Vx-Pry" secondAttribute="leading" constant="16" id="YBo-wu-Ye6"/>
-                                                        <constraint firstAttribute="bottom" secondItem="5KV-4A-Jj0" secondAttribute="bottom" constant="16" id="iSK-QU-utU"/>
-                                                        <constraint firstAttribute="trailing" secondItem="Whm-C2-OWx" secondAttribute="trailing" id="oHh-ot-AAM"/>
+                                                        <constraint firstAttribute="trailing" secondItem="WGQ-PN-sAz" secondAttribute="trailing" constant="32" id="6iS-rq-kA9"/>
+                                                        <constraint firstItem="WGQ-PN-sAz" firstAttribute="leading" secondItem="zrf-ve-qVs" secondAttribute="leading" constant="32" id="HyK-ST-Nfu"/>
+                                                        <constraint firstItem="mCS-hn-aQe" firstAttribute="top" secondItem="zrf-ve-qVs" secondAttribute="top" constant="16" id="OUb-kw-KHS"/>
+                                                        <constraint firstAttribute="bottom" secondItem="WGQ-PN-sAz" secondAttribute="bottom" constant="32" id="Q3I-ZA-v4i"/>
+                                                        <constraint firstAttribute="trailing" secondItem="mCS-hn-aQe" secondAttribute="trailing" constant="16" id="RK8-9x-6Vd"/>
+                                                        <constraint firstItem="mCS-hn-aQe" firstAttribute="leading" secondItem="zrf-ve-qVs" secondAttribute="leading" constant="16" id="ceb-6n-ub0"/>
+                                                        <constraint firstAttribute="bottom" secondItem="mCS-hn-aQe" secondAttribute="bottom" constant="16" id="fWj-KL-mu0"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="lgl-Vx-Pry" firstAttribute="leading" secondItem="VJJ-9B-qbZ" secondAttribute="leading" constant="16" id="6yN-tB-SOF"/>
-                                                <constraint firstAttribute="bottom" secondItem="lgl-Vx-Pry" secondAttribute="bottom" constant="16" id="9Bh-Gx-IjO"/>
-                                                <constraint firstAttribute="trailing" secondItem="lgl-Vx-Pry" secondAttribute="trailing" constant="16" id="ay0-Wk-0oL"/>
-                                                <constraint firstItem="lgl-Vx-Pry" firstAttribute="top" secondItem="VJJ-9B-qbZ" secondAttribute="top" constant="16" id="pkK-fo-mSO"/>
+                                                <constraint firstItem="zrf-ve-qVs" firstAttribute="top" secondItem="DBf-0O-wIG" secondAttribute="top" id="TiA-vK-77L"/>
+                                                <constraint firstAttribute="trailing" secondItem="zrf-ve-qVs" secondAttribute="trailing" id="bib-bk-00M"/>
+                                                <constraint firstAttribute="bottom" secondItem="zrf-ve-qVs" secondAttribute="bottom" id="dwO-09-UVU"/>
+                                                <constraint firstItem="zrf-ve-qVs" firstAttribute="leading" secondItem="DBf-0O-wIG" secondAttribute="leading" id="rWY-qT-oud"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="bgView" destination="lgl-Vx-Pry" id="wE0-DO-Lal"/>
-                                            <outlet property="imgView" destination="Whm-C2-OWx" id="tCG-HU-kDG"/>
-                                            <outlet property="titleLabel" destination="5KV-4A-Jj0" id="plm-kk-NFJ"/>
-                                            <segue destination="v1f-pK-xyF" kind="show" id="k5e-Ju-ChR"/>
+                                            <outlet property="bgView" destination="zrf-ve-qVs" id="Klf-5c-cl3"/>
+                                            <outlet property="imgView" destination="mCS-hn-aQe" id="KT7-R2-l2r"/>
+                                            <outlet property="titleLabel" destination="WGQ-PN-sAz" id="VdG-of-yoV"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

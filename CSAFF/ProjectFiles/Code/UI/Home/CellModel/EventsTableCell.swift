@@ -12,6 +12,7 @@ struct EventCellModel {
 	var image: String
 	var title: String
 	var date: String
+	var webUrl: String
 }
 
 
