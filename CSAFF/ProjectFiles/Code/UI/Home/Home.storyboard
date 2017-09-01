@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="EYl-kV-8Ug">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="aEE-Xc-juf">
+            <objects>
+                <viewController id="rON-47-83k" customClass="HomeViewController" customModule="CSAFF" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="W16-iy-a7B"/>
+                        <viewControllerLayoutGuide type="bottom" id="SFP-Wh-MMb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="w1z-ak-aTa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8Vz-nU-54N">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="xfG-Fn-osC">
+                            <view key="customView" contentMode="scaleToFill" id="ana-9q-CmL">
+                                <rect key="frame" x="16" y="5" width="83" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Festivals" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8P-5v-nGk">
+                                        <rect key="frame" x="0.0" y="6" width="83" height="21"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="f8P-5v-nGk" secondAttribute="trailing" id="10Z-Og-MtC"/>
+                                    <constraint firstItem="f8P-5v-nGk" firstAttribute="leading" secondItem="ana-9q-CmL" secondAttribute="leading" id="gfd-o8-1jB"/>
+                                    <constraint firstItem="f8P-5v-nGk" firstAttribute="top" secondItem="ana-9q-CmL" secondAttribute="top" constant="6" id="l74-6N-Mg1"/>
+                                    <constraint firstAttribute="bottom" secondItem="f8P-5v-nGk" secondAttribute="bottom" constant="6" id="w1P-7W-iNr"/>
+                                </constraints>
+                            </view>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="RPL-ap-uJr">
+                            <view key="customView" contentMode="scaleToFill" id="1hm-AV-pKT">
+                                <rect key="frame" x="276" y="5" width="83" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mV-BJ-EGw">
+                                        <rect key="frame" x="0.0" y="1" width="60" height="31"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                                        <state key="normal" title="Chicago"/>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="location-pin" translatesAutoresizingMaskIntoConstraints="NO" id="Rla-UW-EG7">
+                                        <rect key="frame" x="62" y="4" width="21" height="25"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Rla-UW-EG7" firstAttribute="leading" secondItem="6mV-BJ-EGw" secondAttribute="trailing" constant="2" id="BPc-ff-R2E"/>
+                                    <constraint firstAttribute="bottom" secondItem="6mV-BJ-EGw" secondAttribute="bottom" constant="1" id="BQF-Sv-l0a"/>
+                                    <constraint firstItem="6mV-BJ-EGw" firstAttribute="top" secondItem="1hm-AV-pKT" secondAttribute="top" constant="1" id="D4C-rK-GDh"/>
+                                    <constraint firstAttribute="bottom" secondItem="Rla-UW-EG7" secondAttribute="bottom" constant="4" id="DU2-wN-b0g"/>
+                                    <constraint firstItem="6mV-BJ-EGw" firstAttribute="leading" secondItem="1hm-AV-pKT" secondAttribute="leading" id="F4f-L8-0CH"/>
+                                    <constraint firstItem="Rla-UW-EG7" firstAttribute="top" secondItem="1hm-AV-pKT" secondAttribute="top" constant="4" id="NfT-pr-wUV"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rla-UW-EG7" secondAttribute="trailing" id="OWr-iS-0My"/>
+                                </constraints>
+                            </view>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lg9-EO-7hl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="954" y="118"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="15f-m7-gfG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EYl-kV-8Ug" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="f9D-a4-1mb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rON-47-83k" kind="relationship" relationship="rootViewController" id="4E0-0F-Lvd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dJn-Zn-qLL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="149.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="location-pin" width="279" height="418"/>
+    </resources>
+</document>

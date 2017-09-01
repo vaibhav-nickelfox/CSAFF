@@ -16,6 +16,9 @@
 		80A7B1851F59443000D938DE /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A7B1841F59443000D938DE /* Storyboards.swift */; };
 		80A7B1871F5946F700D938DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A7B1861F5946F700D938DE /* Main.storyboard */; };
 		80A7B1891F59471100D938DE /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A7B1881F59471100D938DE /* Launch.storyboard */; };
+		80A7B18F1F5949C100D938DE /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A7B18E1F5949C100D938DE /* Home.storyboard */; };
+		80A7B1931F59505200D938DE /* UIColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A7B1921F59505200D938DE /* UIColors.swift */; };
+		80A7B1961F59509800D938DE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A7B1951F59509800D938DE /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		80A7B1841F59443000D938DE /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		80A7B1861F5946F700D938DE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ProjectFiles/Resources/Main.storyboard; sourceTree = "<group>"; };
 		80A7B1881F59471100D938DE /* Launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Launch.storyboard; path = ProjectFiles/Resources/Launch.storyboard; sourceTree = "<group>"; };
+		80A7B18E1F5949C100D938DE /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = ProjectFiles/Code/UI/Home/Home.storyboard; sourceTree = "<group>"; };
+		80A7B1921F59505200D938DE /* UIColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColors.swift; path = ProjectFiles/Code/Helpers/UIColors.swift; sourceTree = "<group>"; };
+		80A7B1951F59509800D938DE /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ProjectFiles/Code/UI/Home/Conrollers/HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,8 @@
 		80A7B16A1F593F7300D938DE /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				80A7B18B1F59497E00D938DE /* UI */,
+				80A7B18C1F59498C00D938DE /* Helpers */,
 				80A7B1741F59411600D938DE /* AppDelegate.swift */,
 				80A7B1751F59411600D938DE /* ViewController.swift */,
 				80A7B1801F5943EE00D938DE /* Constants.swift */,
@@ -122,6 +130,39 @@
 			children = (
 			);
 			name = Fonts;
+			sourceTree = "<group>";
+		};
+		80A7B18B1F59497E00D938DE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				80A7B18D1F59499B00D938DE /* Home */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		80A7B18C1F59498C00D938DE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				80A7B1921F59505200D938DE /* UIColors.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		80A7B18D1F59499B00D938DE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				80A7B1941F59508800D938DE /* Controllers */,
+				80A7B18E1F5949C100D938DE /* Home.storyboard */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		80A7B1941F59508800D938DE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				80A7B1951F59509800D938DE /* HomeViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80A7B1871F5946F700D938DE /* Main.storyboard in Resources */,
+				80A7B18F1F5949C100D938DE /* Home.storyboard in Resources */,
 				80A7B1701F5940F900D938DE /* Assets.xcassets in Resources */,
 				80A7B1721F5940F900D938DE /* Info.plist in Resources */,
 				80A7B1891F59471100D938DE /* Launch.storyboard in Resources */,
@@ -202,7 +244,9 @@
 				80A7B1771F59411600D938DE /* ViewController.swift in Sources */,
 				80A7B1851F59443000D938DE /* Storyboards.swift in Sources */,
 				80A7B1761F59411600D938DE /* AppDelegate.swift in Sources */,
+				80A7B1931F59505200D938DE /* UIColors.swift in Sources */,
 				80A7B1831F59441400D938DE /* Configuration.swift in Sources */,
+				80A7B1961F59509800D938DE /* HomeViewController.swift in Sources */,
 				80A7B1811F5943EE00D938DE /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
