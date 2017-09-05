@@ -16,7 +16,7 @@ struct HomeCellModel {
 class HomeTableCell: UITableViewCell {
 
 	@IBOutlet weak var titleLabel: UILabel!
-	@IBOutlet weak var imgView: UIImageView!
+	@IBOutlet weak var imgView: ImageView!
 	@IBOutlet weak var bgView: UIView!
 	
 	static let identifier = "HomeTableCell"
@@ -37,7 +37,7 @@ class HomeTableCell: UITableViewCell {
 	
 	fileprivate func config(_ item: HomeCellModel?) {
 		guard let model = item else { return }
-		imgView?.image = UIImage(named: model.image)
+		imgView.setImageFromUrl(urlString: model.image)
 		titleLabel.text = model.title
 	}
 

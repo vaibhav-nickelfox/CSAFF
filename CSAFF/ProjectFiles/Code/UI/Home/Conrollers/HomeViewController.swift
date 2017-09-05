@@ -17,11 +17,20 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 		configureNavbar()
 		setupTableView()
-		cellItems = [HomeCellModel(image: "csaff", title: "Title1"),
-		             HomeCellModel(image: "csaff", title: "Title2"),
-		             HomeCellModel(image: "csaff", title: "Title3"),
-		             HomeCellModel(image: "csaff", title: "Title4")
-		]
+		
+		APIRequestManager.fetch { [weak self](response) in
+			guard let this = self, let events = response.value?.events  else { return }
+			this.cellItems = events.map{
+				HomeCellModel(image: $0.imageURL, title: $0.name)
+			}
+			print(this.cellItems)
+			this.tableView.reloadData()
+		}
+//		cellItems = [HomeCellModel(image: "csaff", title: "Title1"),
+//		             HomeCellModel(image: "csaff", title: "Title2"),
+//		             HomeCellModel(image: "csaff", title: "Title3"),
+//		             HomeCellModel(image: "csaff", title: "Title4")
+//		]
 	}
 	
 	fileprivate func configureNavbar() {

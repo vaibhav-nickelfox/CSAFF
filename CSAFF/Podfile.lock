@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (4.5.0)
+  - APIClient (0.1.0):
+    - Alamofire (~> 4.4)
+    - SwiftyJSON (~> 3.1)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - APIClient (from `https://github.com/Nickelfox/APIClient.git`)
+  - SDWebImage (~> 3.8)
+
+EXTERNAL SOURCES:
+  APIClient:
+    :git: https://github.com/Nickelfox/APIClient.git
+
+CHECKOUT OPTIONS:
+  APIClient:
+    :commit: a528c031c10c00d8c4b62851531737fa07243c06
+    :git: https://github.com/Nickelfox/APIClient.git
+
+SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  APIClient: 149613fde4a9ce9a906b08cf56ba9166342130f6
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 751345dc552aca481614223065532371faa7abd8
+
+COCOAPODS: 1.2.1
