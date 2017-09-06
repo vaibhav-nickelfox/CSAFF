@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CBDC984257C601F8620572C /* Pods_CSAFF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B4E7E2E6F5C5ECDCBAB730 /* Pods_CSAFF.framework */; };
+		801D24C61F5D380C002B34A4 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801D24C51F5D380C002B34A4 /* APIRouter.swift */; };
+		801D24C81F5D53F5002B34A4 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801D24C71F5D53F5002B34A4 /* Config.swift */; };
+		801D24CE1F5D6602002B34A4 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801D24CD1F5D6602002B34A4 /* Events.swift */; };
+		801D24D21F5D6FB2002B34A4 /* CSAFFAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801D24D11F5D6FB2002B34A4 /* CSAFFAPIClient.swift */; };
+		801D24D41F5D7098002B34A4 /* AuthHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801D24D31F5D7098002B34A4 /* AuthHeaders.swift */; };
+		801D24D61F5D72A7002B34A4 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801D24D51F5D72A7002B34A4 /* ErrorResponse.swift */; };
+		801D24D81F5D9132002B34A4 /* Events+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801D24D71F5D9132002B34A4 /* Events+API.swift */; };
+		801D24DA1F5D99AC002B34A4 /* APIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801D24D91F5D99AC002B34A4 /* APIRequestManager.swift */; };
+		801D24DC1F5D9BDF002B34A4 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801D24DB1F5D9BDF002B34A4 /* ImageView.swift */; };
+		802426951F5F720500FF2B83 /* Paginator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802426941F5F720500FF2B83 /* Paginator.swift */; };
 		80A7B1701F5940F900D938DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80A7B16D1F5940F800D938DE /* Assets.xcassets */; };
 		80A7B1721F5940F900D938DE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80A7B16F1F5940F900D938DE /* Info.plist */; };
 		80A7B1761F59411600D938DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A7B1741F59411600D938DE /* AppDelegate.swift */; };
@@ -16,9 +27,30 @@
 		80A7B1851F59443000D938DE /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A7B1841F59443000D938DE /* Storyboards.swift */; };
 		80A7B1871F5946F700D938DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A7B1861F5946F700D938DE /* Main.storyboard */; };
 		80A7B1891F59471100D938DE /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A7B1881F59471100D938DE /* Launch.storyboard */; };
+		80A7B18F1F5949C100D938DE /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A7B18E1F5949C100D938DE /* Home.storyboard */; };
+		80A7B1931F59505200D938DE /* UIColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A7B1921F59505200D938DE /* UIColors.swift */; };
+		80A7B1961F59509800D938DE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A7B1951F59509800D938DE /* HomeViewController.swift */; };
+		80A7B1991F595F4500D938DE /* HomeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A7B1981F595F4500D938DE /* HomeTableCell.swift */; };
+		80A7B19E1F597FF400D938DE /* SelectCityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A7B19D1F597FF400D938DE /* SelectCityTableViewController.swift */; };
+		80A7B1A01F59907300D938DE /* EventsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A7B19F1F59907300D938DE /* EventsTableCell.swift */; };
+		80A7B1A21F5991EE00D938DE /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A7B1A11F5991EE00D938DE /* EventsViewController.swift */; };
+		80FF1DA11F5F9B5200849A35 /* UIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FF1DA01F5F9B5200849A35 /* UIController.swift */; };
+		80FF1DA51F5FBB1F00849A35 /* RefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80FF1DA41F5FBB1F00849A35 /* RefreshView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		437C286E35C00AAFE42FD390 /* Pods-CSAFF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSAFF.release.xcconfig"; path = "Pods/Target Support Files/Pods-CSAFF/Pods-CSAFF.release.xcconfig"; sourceTree = "<group>"; };
+		70B4E7E2E6F5C5ECDCBAB730 /* Pods_CSAFF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSAFF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		801D24C51F5D380C002B34A4 /* APIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIRouter.swift; path = Model/API/APIRouter.swift; sourceTree = "<group>"; };
+		801D24C71F5D53F5002B34A4 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Config.swift; path = Model/Config.swift; sourceTree = "<group>"; };
+		801D24CD1F5D6602002B34A4 /* Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Events.swift; path = Model/DataModel/Entities/Events.swift; sourceTree = "<group>"; };
+		801D24D11F5D6FB2002B34A4 /* CSAFFAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CSAFFAPIClient.swift; path = Model/API/CSAFFAPIClient.swift; sourceTree = "<group>"; };
+		801D24D31F5D7098002B34A4 /* AuthHeaders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthHeaders.swift; path = Model/API/AuthHeaders.swift; sourceTree = "<group>"; };
+		801D24D51F5D72A7002B34A4 /* ErrorResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ErrorResponse.swift; path = Model/API/ErrorResponse.swift; sourceTree = "<group>"; };
+		801D24D71F5D9132002B34A4 /* Events+API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Events+API.swift"; path = "Model/API/Events+API.swift"; sourceTree = "<group>"; };
+		801D24D91F5D99AC002B34A4 /* APIRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIRequestManager.swift; path = Model/API/APIRequestManager.swift; sourceTree = "<group>"; };
+		801D24DB1F5D9BDF002B34A4 /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageView.swift; path = ProjectFiles/Code/Helpers/ImageView.swift; sourceTree = "<group>"; };
+		802426941F5F720500FF2B83 /* Paginator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Paginator.swift; path = Model/DataModel/Paginator.swift; sourceTree = "<group>"; };
 		80A7B1531F593CB400D938DE /* CSAFF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSAFF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80A7B16D1F5940F800D938DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ProjectFiles/Resources/Assets.xcassets; sourceTree = "<group>"; };
 		80A7B16F1F5940F900D938DE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ProjectFiles/Resources/Info.plist; sourceTree = "<group>"; };
@@ -30,6 +62,16 @@
 		80A7B1841F59443000D938DE /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		80A7B1861F5946F700D938DE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ProjectFiles/Resources/Main.storyboard; sourceTree = "<group>"; };
 		80A7B1881F59471100D938DE /* Launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Launch.storyboard; path = ProjectFiles/Resources/Launch.storyboard; sourceTree = "<group>"; };
+		80A7B18E1F5949C100D938DE /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = ProjectFiles/Code/UI/Home/Home.storyboard; sourceTree = "<group>"; };
+		80A7B1921F59505200D938DE /* UIColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColors.swift; path = ProjectFiles/Code/Helpers/UIColors.swift; sourceTree = "<group>"; };
+		80A7B1951F59509800D938DE /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ProjectFiles/Code/UI/Home/Conrollers/HomeViewController.swift; sourceTree = "<group>"; };
+		80A7B1981F595F4500D938DE /* HomeTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeTableCell.swift; path = ProjectFiles/Code/UI/Home/CellModel/HomeTableCell.swift; sourceTree = "<group>"; };
+		80A7B19D1F597FF400D938DE /* SelectCityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectCityTableViewController.swift; path = ProjectFiles/Code/UI/Home/Conrollers/SelectCityTableViewController.swift; sourceTree = "<group>"; };
+		80A7B19F1F59907300D938DE /* EventsTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventsTableCell.swift; path = ProjectFiles/Code/UI/Home/CellModel/EventsTableCell.swift; sourceTree = "<group>"; };
+		80A7B1A11F5991EE00D938DE /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventsViewController.swift; path = ProjectFiles/Code/UI/Home/Conrollers/EventsViewController.swift; sourceTree = "<group>"; };
+		80FF1DA01F5F9B5200849A35 /* UIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIController.swift; path = ProjectFiles/Code/Helpers/UIController.swift; sourceTree = "<group>"; };
+		80FF1DA41F5FBB1F00849A35 /* RefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RefreshView.xib; path = ProjectFiles/Code/UI/Home/RefreshView.xib; sourceTree = "<group>"; };
+		A65DD5E2A1572A5BD8DC4335 /* Pods-CSAFF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSAFF.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CSAFF/Pods-CSAFF.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,12 +79,67 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CBDC984257C601F8620572C /* Pods_CSAFF.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39F4AB0313FA785E113C8673 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A65DD5E2A1572A5BD8DC4335 /* Pods-CSAFF.debug.xcconfig */,
+				437C286E35C00AAFE42FD390 /* Pods-CSAFF.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		74564C991D03FF3113E68DAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70B4E7E2E6F5C5ECDCBAB730 /* Pods_CSAFF.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		801D24C41F5D37DE002B34A4 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				801D24C51F5D380C002B34A4 /* APIRouter.swift */,
+				801D24D11F5D6FB2002B34A4 /* CSAFFAPIClient.swift */,
+				801D24D31F5D7098002B34A4 /* AuthHeaders.swift */,
+				801D24D51F5D72A7002B34A4 /* ErrorResponse.swift */,
+				801D24D71F5D9132002B34A4 /* Events+API.swift */,
+				801D24D91F5D99AC002B34A4 /* APIRequestManager.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		801D24C91F5D63E9002B34A4 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				801D24CC1F5D65EE002B34A4 /* Entities */,
+				802426941F5F720500FF2B83 /* Paginator.swift */,
+			);
+			name = DataModel;
+			sourceTree = "<group>";
+		};
+		801D24CC1F5D65EE002B34A4 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				801D24CD1F5D6602002B34A4 /* Events.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		8024268F1F5F702100FF2B83 /* Pagination */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Pagination;
+			sourceTree = "<group>";
+		};
 		80A7B14A1F593CB400D938DE = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +148,8 @@
 				80A7B1691F593F5500D938DE /* Model */,
 				80A7B1551F593CB400D938DE /* CSAFF */,
 				80A7B1541F593CB400D938DE /* Products */,
+				39F4AB0313FA785E113C8673 /* Pods */,
+				74564C991D03FF3113E68DAB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +181,9 @@
 		80A7B1691F593F5500D938DE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				801D24C91F5D63E9002B34A4 /* DataModel */,
+				801D24C41F5D37DE002B34A4 /* API */,
+				801D24C71F5D53F5002B34A4 /* Config.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -89,6 +191,8 @@
 		80A7B16A1F593F7300D938DE /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				80A7B18B1F59497E00D938DE /* UI */,
+				80A7B18C1F59498C00D938DE /* Helpers */,
 				80A7B1741F59411600D938DE /* AppDelegate.swift */,
 				80A7B1751F59411600D938DE /* ViewController.swift */,
 				80A7B1801F5943EE00D938DE /* Constants.swift */,
@@ -124,6 +228,55 @@
 			name = Fonts;
 			sourceTree = "<group>";
 		};
+		80A7B18B1F59497E00D938DE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8024268F1F5F702100FF2B83 /* Pagination */,
+				80A7B18D1F59499B00D938DE /* Home */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		80A7B18C1F59498C00D938DE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				80A7B1921F59505200D938DE /* UIColors.swift */,
+				801D24DB1F5D9BDF002B34A4 /* ImageView.swift */,
+				80FF1DA01F5F9B5200849A35 /* UIController.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		80A7B18D1F59499B00D938DE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				80A7B1971F595F1500D938DE /* CellModel */,
+				80A7B1941F59508800D938DE /* Controllers */,
+				80A7B18E1F5949C100D938DE /* Home.storyboard */,
+				80FF1DA41F5FBB1F00849A35 /* RefreshView.xib */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		80A7B1941F59508800D938DE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				80A7B1951F59509800D938DE /* HomeViewController.swift */,
+				80A7B19D1F597FF400D938DE /* SelectCityTableViewController.swift */,
+				80A7B1A11F5991EE00D938DE /* EventsViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		80A7B1971F595F1500D938DE /* CellModel */ = {
+			isa = PBXGroup;
+			children = (
+				80A7B1981F595F4500D938DE /* HomeTableCell.swift */,
+				80A7B19F1F59907300D938DE /* EventsTableCell.swift */,
+			);
+			name = CellModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +284,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80A7B1651F593CB400D938DE /* Build configuration list for PBXNativeTarget "CSAFF" */;
 			buildPhases = (
+				FC7FF9786C3C98FB8BA2B316 /* [CP] Check Pods Manifest.lock */,
 				80A7B14F1F593CB400D938DE /* Sources */,
 				80A7B1501F593CB400D938DE /* Frameworks */,
 				80A7B1511F593CB400D938DE /* Resources */,
+				2B61D8684731916FE30F7AEA /* [CP] Embed Pods Frameworks */,
+				545D672EBD881601DEB9C84D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,7 +341,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80FF1DA51F5FBB1F00849A35 /* RefreshView.xib in Resources */,
 				80A7B1871F5946F700D938DE /* Main.storyboard in Resources */,
+				80A7B18F1F5949C100D938DE /* Home.storyboard in Resources */,
 				80A7B1701F5940F900D938DE /* Assets.xcassets in Resources */,
 				80A7B1721F5940F900D938DE /* Info.plist in Resources */,
 				80A7B1891F59471100D938DE /* Launch.storyboard in Resources */,
@@ -194,16 +352,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B61D8684731916FE30F7AEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CSAFF/Pods-CSAFF-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		545D672EBD881601DEB9C84D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CSAFF/Pods-CSAFF-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC7FF9786C3C98FB8BA2B316 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		80A7B14F1F593CB400D938DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				801D24DC1F5D9BDF002B34A4 /* ImageView.swift in Sources */,
+				80A7B1A21F5991EE00D938DE /* EventsViewController.swift in Sources */,
 				80A7B1771F59411600D938DE /* ViewController.swift in Sources */,
+				802426951F5F720500FF2B83 /* Paginator.swift in Sources */,
+				80FF1DA11F5F9B5200849A35 /* UIController.swift in Sources */,
+				80A7B1A01F59907300D938DE /* EventsTableCell.swift in Sources */,
+				80A7B19E1F597FF400D938DE /* SelectCityTableViewController.swift in Sources */,
 				80A7B1851F59443000D938DE /* Storyboards.swift in Sources */,
+				801D24D81F5D9132002B34A4 /* Events+API.swift in Sources */,
 				80A7B1761F59411600D938DE /* AppDelegate.swift in Sources */,
+				801D24C81F5D53F5002B34A4 /* Config.swift in Sources */,
+				801D24D61F5D72A7002B34A4 /* ErrorResponse.swift in Sources */,
+				80A7B1931F59505200D938DE /* UIColors.swift in Sources */,
+				801D24D21F5D6FB2002B34A4 /* CSAFFAPIClient.swift in Sources */,
+				801D24CE1F5D6602002B34A4 /* Events.swift in Sources */,
+				801D24D41F5D7098002B34A4 /* AuthHeaders.swift in Sources */,
 				80A7B1831F59441400D938DE /* Configuration.swift in Sources */,
+				801D24C61F5D380C002B34A4 /* APIRouter.swift in Sources */,
+				80A7B1961F59509800D938DE /* HomeViewController.swift in Sources */,
 				80A7B1811F5943EE00D938DE /* Constants.swift in Sources */,
+				801D24DA1F5D99AC002B34A4 /* APIRequestManager.swift in Sources */,
+				80A7B1991F595F4500D938DE /* HomeTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +530,7 @@
 		};
 		80A7B1661F593CB400D938DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A65DD5E2A1572A5BD8DC4335 /* Pods-CSAFF.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -323,6 +547,7 @@
 		};
 		80A7B1671F593CB400D938DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 437C286E35C00AAFE42FD390 /* Pods-CSAFF.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -355,6 +580,7 @@
 				80A7B1671F593CB400D938DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
