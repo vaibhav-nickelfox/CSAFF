@@ -16,7 +16,7 @@ extension ListResponse: JSONParseable {
     
     public static func parse(_ json: JSON) throws -> ListResponse {
         let jsonList = json.arrayValue
-        
+		
         let listResponse = ListResponse()
         for json in jsonList {
             do {
@@ -27,5 +27,5 @@ extension ListResponse: JSONParseable {
             }
         }
         return listResponse
-    }	
+    }
 }

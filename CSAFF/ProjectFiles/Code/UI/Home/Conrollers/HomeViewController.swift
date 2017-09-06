@@ -7,30 +7,56 @@
 //
 
 import UIKit
+import Paginator
 
 class HomeViewController: UIViewController {
 
 	@IBOutlet var tableView: UITableView!
+	var paginationManager: PaginationManager?
+	fileprivate let paginator = Paginator<Event>()
+	var loaderView: UIView?
 	
 	var cellItems: [HomeCellModel] = []
     override func viewDidLoad() {
         super.viewDidLoad()
 		configureNavbar()
 		setupTableView()
-		
-		APIRequestManager.fetch { [weak self](response) in
-			guard let this = self, let events = response.value?.events  else { return }
-			this.cellItems = events.map{
+		setupPagination()
+		fetchEvents()
+	}
+	
+	func fetchEvents() {
+		self.showLoader()
+		self.paginationManager?.load { [weak self] _ in
+			self?.hideLoader()
+		}
+
+	}
+	
+	fileprivate func setupPagination() {
+		customRefreshView()
+		self.paginationManager = PaginationManager(scrollView: self.tableView, showPullToRefresh: true, refreshView: self.loaderView)
+		self.paginationManager?.delegate = self
+	}
+	
+	fileprivate func handleDataLoad(events: [Event]?) {
+		if let events = events {
+			self.cellItems = events.map {
 				HomeCellModel(image: $0.imageURL, title: $0.name)
 			}
-			print(this.cellItems)
-			this.tableView.reloadData()
+		} else {
+			self.cellItems = []
 		}
-//		cellItems = [HomeCellModel(image: "csaff", title: "Title1"),
-//		             HomeCellModel(image: "csaff", title: "Title2"),
-//		             HomeCellModel(image: "csaff", title: "Title3"),
-//		             HomeCellModel(image: "csaff", title: "Title4")
-//		]
+		tableView.reloadData()
+	}
+	
+	fileprivate func handleMoreDataLoad(events: [Event]?) {
+		if let events = events {
+			self.cellItems = events.map {
+				HomeCellModel(image: $0.imageURL, title: $0.name)
+			}
+			tableView.reloadData()
+		}
 	}
 	
 	fileprivate func configureNavbar() {
@@ -71,5 +97,34 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 extension HomeViewController: SelectCityDelegate {
 	func didSelectCity(_ viewController: SelectCityViewController, _ model: CityModel) {
 		print(model.city)
+	}
+}
+
+//MARK: Pagination Manager Delegate
+extension HomeViewController: PaginationManagerDelegate {
+	func refreshAll(completion: @escaping (Bool) -> Void) {
+		self.paginator.refresh { [weak self](eventList) in
+			guard let this = self else { return }
+			this.handleDataLoad(events: eventList.value?.events)
+			//this.handleDataLoad(events: eventList.value)
+			completion(this.paginator.canLoadMore)
+		}
+	}
+	
+	func loadMore(completion: @escaping (Bool) -> Void) {
+		self.paginator.loadNextPage { [weak self](eventList) in
+			guard let this = self else { return }
+			this.handleMoreDataLoad(events: eventList.value?.events)
+//			this.handleMoreDataLoad(events: eventList.value)
+			completion(this.paginator.canLoadMore)
+		}
+	}
+}
+
+//MARK: Refresh Animation
+extension HomeViewController {
+	fileprivate func customRefreshView() {
+		let refreshContent = Bundle.main.loadNibNamed("RefreshView", owner: self, options: nil)
+		self.loaderView = (refreshContent?[0] as! UIView)
 	}
 }

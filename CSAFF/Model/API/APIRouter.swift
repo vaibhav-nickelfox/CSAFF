@@ -27,9 +27,11 @@ public enum APIRouter: Router {
 	public var path: String {
 		switch self {
 		case .fetchCities: return ""
-		case .fetchEvents: return "/events/search/"
+		//case .fetchEvents: return "/events/search/"
+		case .fetchEvents: return "/users/me/owned_events"
 		case .fetchSchedule(let event): return "\(event)"
 		}
+		//users/me/owned_event
 	}
 	
 	public var params: [String : Any] {

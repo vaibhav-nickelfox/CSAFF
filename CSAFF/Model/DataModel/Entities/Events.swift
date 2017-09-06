@@ -9,7 +9,7 @@
 import Foundation
 import APIClient
 
-typealias APICompletion<T> = (APIResult<T>) -> Void
+public typealias APICompletion<T> = (APIResult<T>) -> Void
 
 public struct EventResponse: JSONParseable {
 	var events: [Event]

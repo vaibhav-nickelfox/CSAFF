@@ -37,7 +37,8 @@ class HomeTableCell: UITableViewCell {
 	
 	fileprivate func config(_ item: HomeCellModel?) {
 		guard let model = item else { return }
-		imgView.setImageFromUrl(urlString: model.image)
+//		imgView.setImageFromUrl(urlString: model.image)
+		imgView.sd_setImage(with: URL(string: model.image)!)
 		titleLabel.text = model.title
 	}
 

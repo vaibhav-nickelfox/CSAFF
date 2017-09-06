@@ -6,7 +6,8 @@ use_frameworks!
 target 'CSAFF' do
   pod "APIClient", :git => 'https://github.com/Nickelfox/APIClient.git'
   pod 'SDWebImage', '~> 3.8'
-  
+  pod 'MBProgressHUD', '~> 1.0'
+  pod 'Paginator', :path => '~/Documents/xcode/Paginator'
 
   # Pods for CSAFF
 
